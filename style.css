@@ -9,3 +9,8 @@ hr.style2{
     margin: 15px 5px 0 px;
     border-radius: 5px;
 }
+
+#contact img{
+    width: 75%;
+    border-radius: 5px;
+}
