@@ -61,7 +61,7 @@
     </section>
 
     <!-- Boxes -->
-    <section class="p-5"  id="watches">
+    <section class="p-5" id="watches">
         <div class="container">
             <div class="row text-center g-4">
                 <div class="col-md">
@@ -69,7 +69,8 @@
                         <div class="card-header">
                             <h4 class="card-title my-3">Apple Watch Series 7</h4>
                             <div class="d-flex flex-column">
-                                <button class="btn btn-outline-primary mt-2">Buy</button>
+                                <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Buy</button>
                                 <button class="btn btn-link">Learn more ></button>
                             </div>
                         </div>
@@ -116,7 +117,8 @@
                         <div class="card-header">
                             <h4 class="card-title my-3">Apple Watch Series SE</h4>
                             <div class="d-flex flex-column">
-                                <button class="btn btn-outline-primary mt-2">Buy</button>
+                                <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Buy</button>
                                 <button class="btn btn-link">Learn more ></button>
                             </div>
                         </div>
@@ -159,7 +161,8 @@
                         <div class="card-header">
                             <h4 class="card-title my-3">Apple Watch Series 3</h4>
                             <div class="d-flex flex-column">
-                                <button class="btn btn-outline-primary mt-2">Buy</button>
+                                <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Buy</button>
                                 <button class="btn btn-link">Learn more ></button>
                             </div>
                         </div>
@@ -493,6 +496,61 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p >Copyright &copy; 2022 Yveette</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5 text-white">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Price 1000$</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Do you want to purchase now?</p>
+                    <form>
+                        <div class="mb-1">
+                            <label for="first-name" class="col-form-label">First Name:</label>
+                            <input type="text" class="form-control" id="first-name">
+                        </div>
+                        <div class="mb-1">
+                            <label for="first-name" class="col-form-label">Last Name:</label>
+                            <input type="text" class="form-control" id="last-name">
+                        </div>
+                        <div class="mb-1">
+                            <label for="first-name" class="col-form-label">Email:</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="mb-1">
+                            <label for="first-name" class="col-form-label">Phone:</label>
+                            <input type="text" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-1">
+                            <label for="first-name" class="col-form-label">Country:</label>
+                            <input type="text" class="form-control" id="country">
+                        </div>
+                        <div class="mb-1">
+                            <label for="first-name" class="col-form-label">Address:</label>
+                            <input type="text" class="form-control" id="address">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Buy Now!</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
